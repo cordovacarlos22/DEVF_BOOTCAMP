@@ -2,6 +2,7 @@
 
 const biggestNumber = () => {
     let num1 = prompt("Ingresar numero 1 de 2");
+    
     let num2 = prompt("Ingresar numero 2 de 2");
     //* validates if num1 is bigger than num2
     if (num1 > num2) {
