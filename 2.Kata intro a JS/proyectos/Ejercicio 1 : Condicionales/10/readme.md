@@ -1,5 +1,6 @@
 10. Un conocido portal de educación en tecnología está ofreciendo programas para aprender a desarrollar aplicaciones. Escribe un programa que le indique a la persona interesada cuánto deberá pagar mensualmente de acuerdo a la opción elegida.
-El programa educativo contempla 3 diferentes niveles, cada uno con su costo mensual: Course: $4999 MXN
+El programa educativo contempla 3 diferentes niveles, cada uno con su costo mensual: 
+Course: $4999 MXN
 Carrera $3999 MXN
 Master: $2999 MXN
 Adicionalmente preguntar si cuenta con alguna beca y aplicar el descuento correspondiente al precio final.
