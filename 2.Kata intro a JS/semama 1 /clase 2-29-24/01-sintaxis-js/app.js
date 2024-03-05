@@ -1,7 +1,9 @@
+
+
 //Podemos declarar variables con let, var, const
 let n = 'nombre';
 console.log(n)
-console.log('Ejecutando...')
+console.log('Ejecutando...') 
 let edad = 34;
 
 //Declaración y asignación
@@ -12,64 +14,63 @@ let users  //undefined
 users = 'mucha gente'
 
 
-//!Tipos de datos :
+//Tipos de datos
 
-
-//! datos tipo string
 let txt1 = "Lorem ipsum"
 let txt2 = 'Nuevo texto'
-let txt3 = `aquin hay ${users}`
+let txt3 = `Aquí hay ${users}`
 
-console.log(txt3);
+console.log(txt3)
 
+let recompensas = null
 
-//! tipo de dato null 
-let recompensas = null;
-// type of regresa el tipo de dato guardado en una variable
-console.log(`Variable txt1 es un tipo de data ${typeof txt1}`);
+//typeof regresa el tipo de dato guardado en una variable
+console.log(`Variable txt1 es un tipo de dato ${typeof txt1}`)
 
-//! datos tipo numericos 
-
-let num1 = 2;
-
-//!datos tipo booleano
-let boolTrue = true;
-let boolFalse = false;
-
-//! tipo de dato object
-
+//Tipo de dato object
 let iphone19 = {
-  procesador: 'mi procesador',
-  pantalla: '12',
-  ram: '8gb'
-
+    procesador: 'miProcesador',
+    sizePantalla: '12',
+    ram: '8gb'
 }
 
 let pelicula = {
-  nombre: 'resplandor',
-  year: 1960,
-  premios: 4,
-  director: 'mi director'
-
+    nombre: 'resplandor',
+    year: '1960',
+    premios: null,
+    director: 'Stanley Kubrick'
 }
 
-console.log(pelicula.nombre);
+console.log(pelicula.nombre)
 
+//Con template literals vamos a imprimir en consola el mensaje: "El director del resplandor es Stanley Kubrick (variable)"
 console.log(`El director del resplandor es ${pelicula.director}`)
 
-// operadores de incremento y decremento
 
-let corazones = 5;
-corazones++ // 6
+//operadores de incremento y decremento
+
+let corazones = 5
+
+corazones++ //6
 corazones++ //7
+console.log('Tienes: ' + corazones + ' vidas') // tienes 7 vidas
 
-console.log('Tienes:', corazones, ' vidas'); // tienes 7 vidas
-corazones-- // 6
-corazones--//5
-corazones -= 3; //2 
-console.log('Tienes:', corazones, ' vidas'); // tienes 2 vidas
-corazones += 2 //4
-console.log('Tienes:', corazones, ' vidas'); // tienes 4 vidas
+corazones--
+console.log('Tienes: ' + corazones + ' vidas') // tienes 6 vidas
 
-// booleanos comparativos, igualdad, logicos
+corazones-= 4
+console.log('Tienes: ' + corazones + ' vidas') // tienes 2 vidas
+
+corazones+= 2
+console.log('Tienes: ' + corazones + ' vidas') // tienes 4 vidas
+
+/* 
+
+//Ser descriptivos en la asignación de nombres de variables
+//Esto es una mala práctica:
+
+var dato = 'hola'
+var dato2 = 32 
+
+*/
 
