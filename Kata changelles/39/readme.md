@@ -1,0 +1,1 @@
+Elige un pingüino de la lista de pingüinos ficticios de wikipedia Crea un objeto llamado myPenguin con propiedades que representen la información listada en cada columna en esa página de wikipedia (character, origin y notes)
