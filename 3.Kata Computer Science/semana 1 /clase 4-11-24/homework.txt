@@ -5,7 +5,7 @@ El carrito debe tener las siguientes características:
 
     Debe tener un método llamado agregarProducto(producto) que permita agregar un producto al carrito.
 
-    Debe tener un método llamado total que calcule y devuelva el precio total de todos los productos en el carrito.
+    Debe tener un método llamado total() que calcule y devuelva el precio total de todos los productos en el carrito.
 
     Debe tener un método llamado mostrarCarrito() que muestre en la consola la lista de productos en el carrito junto con sus precios individuales y el precio total.
 
