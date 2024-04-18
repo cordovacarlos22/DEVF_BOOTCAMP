@@ -223,13 +223,22 @@ class Gato extends Animal {
     }
 };
 
+class Vaca extends Animal{
+    constructor(nombre,especie,edad,manchas) {
+        super(nombre, especie, edad);
+        this.manchas = manchas;
+    }
+}
+
+
+
 
 
 
 let gato = new Gato('micha', 'siames', 4,'azules');
 gato.saludar();
 
-let vaca = new Animal('pinto', 'australian', 10);
+let vaca = new Vaca('pinto', 'australian', 10,false);
 
-let perro = new Animal('maggie', 'husky', 10);
+let perro = new Animal('maggie', 'husky', 10,true);
 
