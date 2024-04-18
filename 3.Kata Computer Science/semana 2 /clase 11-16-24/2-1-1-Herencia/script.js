@@ -201,3 +201,35 @@ pokemon1.electrocutar(pokemon2);
 */
 
 
+class Animal { 
+    constructor(nombre,especie,edad) {
+        this.nombre = nombre;
+        this.especie = especie;
+        this.edad = edad;
+    }
+
+    saludar() {
+        console.log(`brrr`);
+    }
+}
+
+class Gato extends Animal {
+    constructor(nombre,especie,edad,colorOjos) {
+        super(nombre, especie, edad);
+        this.colorOjos = colorOjos;
+    }
+    saludar() {
+        console.log('meow meow');
+    }
+};
+
+
+
+
+let gato = new Gato('micha', 'siames', 4,'azules');
+gato.saludar();
+
+let vaca = new Animal('pinto', 'australian', 10);
+
+let perro = new Animal('maggie', 'husky', 10);
+
