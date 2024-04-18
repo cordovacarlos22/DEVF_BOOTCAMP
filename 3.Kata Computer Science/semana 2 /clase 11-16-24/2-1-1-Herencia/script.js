@@ -228,10 +228,21 @@ class Vaca extends Animal{
         super(nombre, especie, edad);
         this.manchas = manchas;
     }
+    saludar() {
+        console.log('mau mau');
+    }
 }
 
 
-
+class Perro extends Animal{
+    constructor(nombre,especie,edad,vacunado) {
+        super(nombre, especie, edad);
+        this.vacunado = vacunado;
+    }
+    saludar() {
+        console.log('woof woof');
+    }
+}
 
 
 
@@ -240,5 +251,5 @@ gato.saludar();
 
 let vaca = new Vaca('pinto', 'australian', 10,false);
 
-let perro = new Animal('maggie', 'husky', 10,true);
+let perro = new Perro('maggie', 'husky', 10,true);
 
