@@ -244,12 +244,32 @@ class Perro extends Animal{
     }
 }
 
+class Rancho {
+    constructor(anima1, animal2, animal3) {
+        this.anima1 = anima1;
+        this.animal2 = animal2;
+        this.animal3 = animal3;
+    }
 
+    saludar() {
+        this.anima1.saludar();
+        this.animal2.saludar();
+        this.animal3.saludar();
+    }
+}
 
 let gato = new Gato('micha', 'siames', 4,'azules');
-gato.saludar();
+
 
 let vaca = new Vaca('pinto', 'australian', 10,false);
 
-let perro = new Perro('maggie', 'husky', 10,true);
+let perro = new Perro('maggie', 'husky', 10, true);
+
+let rancho = new Rancho(gato, vaca, perro);
+
+rancho.saludar();
+
+
+
+
 
