@@ -1,15 +1,15 @@
 // Encapsulamiento
-class CuentaDeBanco{
+class CuentaDeBanco {
 
     #dinero;
 
-    constructor(id, titular, dinero){
+    constructor(id, titular, dinero) {
         this.id = id;
         this.titular = titular;
         this.#dinero = dinero;
     }
 
-    mostrarInformacion(){
+    mostrarInformacion() {
         console.log(`${this.titular} tiene ${this.#dinero} MXN`);
         //console.log(this.titular + ' tiene ' + this.dinero + ' MXN');
     }
@@ -24,15 +24,15 @@ cuenta1.mostrarInformacion();
 cuenta1.mostrarInformacion();
 
 // Herencia
-class Pokemon{
+class Pokemon {
 
-    constructor(nombre, poderDeAtaque, nivelDeVida){
+    constructor(nombre, poderDeAtaque, nivelDeVida) {
         this.nombre = nombre;
         this.poderDeAtaque = poderDeAtaque;
         this.nivelDeVida = nivelDeVida;
     }
 
-    atacar(pokemonAtacado){
+    atacar(pokemonAtacado) {
         console.log(`${this.nombre} está atacando a ${pokemonAtacado.nombre}`);
         console.log(`El nivel de vida de ${pokemonAtacado.nombre} ANTES del ataque es ${pokemonAtacado.nivelDeVida}`);
         pokemonAtacado.nivelDeVida -= this.poderDeAtaque;
@@ -42,21 +42,21 @@ class Pokemon{
 }
 
 // class <Nombre de la Subclase> extends <Nombre de la clase Padre>
-class PokemonFuego extends Pokemon{
-    constructor(nombre, poderDeAtaque, nivelDeVida, colorDeFlama){
+class PokemonFuego extends Pokemon {
+    constructor(nombre, poderDeAtaque, nivelDeVida, colorDeFlama) {
         // Este método manda a llamar al constructor de la clase padre.
         // SIEMPRE se tiene que mandar a llamar al constructor de la clase padre en el constructor de la clase hija.
-        super(nombre, poderDeAtaque, nivelDeVida); 
+        super(nombre, poderDeAtaque, nivelDeVida);
         this.colorDeFlama = colorDeFlama;
     }
 
     // Sobreescritura de método = Reescribir el comportamiento de un método de la clase padre en la clase hija
-    atacar(pokemonAtacado){
+    atacar(pokemonAtacado) {
         this.quemar(pokemonAtacado);
     }
 
     // Este es un método exclusivo de la clase hija.
-    quemar(pokemonAtacado){
+    quemar(pokemonAtacado) {
         console.log(`${this.nombre} está quemando a ${pokemonAtacado.nombre}`);
         console.log(`El nivel de vida de ${pokemonAtacado.nombre} ANTES del ataque es ${pokemonAtacado.nivelDeVida}`);
         pokemonAtacado.nivelDeVida -= this.poderDeAtaque * 1.2;
@@ -64,17 +64,17 @@ class PokemonFuego extends Pokemon{
     }
 }
 
-class PokemonElectrico extends Pokemon{
-    constructor(nombre, poderDeAtaque, nivelDeVida, voltaje){
-        super(nombre, poderDeAtaque, nivelDeVida); 
+class PokemonElectrico extends Pokemon {
+    constructor(nombre, poderDeAtaque, nivelDeVida, voltaje) {
+        super(nombre, poderDeAtaque, nivelDeVida);
         this.voltaje = voltaje;
     }
 
-    atacar(pokemonAtacado){
+    atacar(pokemonAtacado) {
         this.electrocutar(pokemonAtacado);
     }
 
-    electrocutar(pokemonAtacado){
+    electrocutar(pokemonAtacado) {
         console.log(`${this.nombre} está electrocutando a ${pokemonAtacado.nombre}`);
         console.log(`El nivel de vida de ${pokemonAtacado.nombre} ANTES del ataque es ${pokemonAtacado.nivelDeVida}`);
         pokemonAtacado.nivelDeVida -= this.poderDeAtaque * 1.4;
@@ -133,18 +133,18 @@ class PokemonElectrico{
 }
 */
 
-class Combate{
+class Combate {
 
-    constructor(pokemonA, pokemonB){
+    constructor(pokemonA, pokemonB) {
         this.pokemonA = pokemonA;
         this.pokemonB = pokemonB;
     }
 
-    comenzarCombate(){
+    comenzarCombate() {
         console.log(`¡Comienza el combate!!!!!!!`)
     }
 
-    pokemonAAtacaAPokemonB(){
+    pokemonAAtacaAPokemonB() {
         //instanceof es un operador que permite verificar el tipo de dato de un objeto.
         /* Ejemplo de ataques especiales sin polimorfismo (sobreescritura de métodos)
         if(this.pokemonA instanceof PokemonFuego){
@@ -157,7 +157,7 @@ class Combate{
         this.pokemonA.atacar(this.pokemonB);
     }
 
-    pokemonBAtacaAPokemonA(){
+    pokemonBAtacaAPokemonA() {
         /*
         if(this.pokemonB instanceof PokemonFuego){
             this.pokemonB.quemar(this.pokemonA);
@@ -201,8 +201,8 @@ pokemon1.electrocutar(pokemon2);
 */
 
 
-class Animal { 
-    constructor(nombre,especie,edad) {
+class Animal {
+    constructor(nombre, especie, edad) {
         this.nombre = nombre;
         this.especie = especie;
         this.edad = edad;
@@ -214,7 +214,7 @@ class Animal {
 }
 
 class Gato extends Animal {
-    constructor(nombre,especie,edad,colorOjos) {
+    constructor(nombre, especie, edad, colorOjos) {
         super(nombre, especie, edad);
         this.colorOjos = colorOjos;
     }
@@ -223,8 +223,8 @@ class Gato extends Animal {
     }
 };
 
-class Vaca extends Animal{
-    constructor(nombre,especie,edad,manchas) {
+class Vaca extends Animal {
+    constructor(nombre, especie, edad, manchas) {
         super(nombre, especie, edad);
         this.manchas = manchas;
     }
@@ -234,8 +234,8 @@ class Vaca extends Animal{
 }
 
 
-class Perro extends Animal{
-    constructor(nombre,especie,edad,vacunado) {
+class Perro extends Animal {
+    constructor(nombre, especie, edad, vacunado) {
         super(nombre, especie, edad);
         this.vacunado = vacunado;
     }
@@ -245,29 +245,35 @@ class Perro extends Animal{
 }
 
 class Rancho {
-    constructor(anima1, animal2, animal3) {
-        this.anima1 = anima1;
-        this.animal2 = animal2;
-        this.animal3 = animal3;
+    constructor() {
+        this.animales = [];
     }
 
-    saludar() {
-        this.anima1.saludar();
-        this.animal2.saludar();
-        this.animal3.saludar();
+    agregarAnimal(animal) {
+        this.animales.push(animal);
+    }
+
+    escucharSaludos() {
+        for (let i = 0; i < this.animales.length; i++) {
+            this.animales[i].saludar();
+        }
     }
 }
 
-let gato = new Gato('micha', 'siames', 4,'azules');
+let gato = new Gato('micha', 'siames', 4, 'azules');
 
 
-let vaca = new Vaca('pinto', 'australian', 10,false);
+let vaca = new Vaca('pinto', 'australian', 10, false);
 
 let perro = new Perro('maggie', 'husky', 10, true);
 
-let rancho = new Rancho(gato, vaca, perro);
+let rancho = new Rancho();
+rancho.agregarAnimal(gato);
+rancho.agregarAnimal(vaca);
+rancho.agregarAnimal(perro);
+rancho.escucharSaludos();
 
-rancho.saludar();
+
 
 
 
