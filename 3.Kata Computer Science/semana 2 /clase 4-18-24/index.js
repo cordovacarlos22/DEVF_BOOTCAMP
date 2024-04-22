@@ -1,4 +1,6 @@
 // ------------------------------------------
+
+// ! pila (stacks)
 class Pila {
   constructor() {
     this.pila = [];
@@ -60,7 +62,9 @@ console.log("La págin anterior fue: " + historialTona.mostrarTope());
 console.log("Me regreso a la página anterior...");
 historialTona.eliminar();
 console.log("La págin anterior fue: " + historialTona.mostrarTope());
+________________________________________________________________
 
+//! Cola (queues)
 class Cola {
 
   constructor() {
@@ -155,4 +159,4 @@ console.log(filaDeTortillas.eliminarElemento() + " fue despachado");
         
     Ejercicio
     Se tiene una cola en la cual se han repartido tickets con el orden de atención. Sin embargo, llegada la hora de inicio hay muchos “colados”, es por esto que se le ordena al vigilante que retire a todos aquellos que no tienen ticket. Muestra la cola inicial, qué elementos fueron retirados de la cola y la cola final.
-Sugerencia: desencolar cada elemento, si tiene el ticket se vuelve a encolar, si no se retira.
+Sugerencia: desencolar cada elemento, si tiene el ticket se vuelve a encolar, si no se retira. */
