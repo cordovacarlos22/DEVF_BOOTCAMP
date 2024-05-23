@@ -7,4 +7,9 @@ Callbacks
 Promesas
 Para manejar promesas podemos utilizar los métodos then() y anidar más promesas con then() también.
 El método catch() recibe una función como parámetro y esta se ejecuta en caso de que alguna de las promesas sea rechazada.
+Algunos métodos y funciones de JS ya son promesas, algunos ejemplos son:
+fetch()
+json()
+setTimeout()
+Métodos relacionados a bases de datos
 Async/Await
