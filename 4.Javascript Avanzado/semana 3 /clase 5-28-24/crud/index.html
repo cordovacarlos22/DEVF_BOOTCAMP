@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crud</title>
+  <script src="index.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+
+
+  <header class="flex justify-between p-5  bg-violet-300 items-center">
+
+    <div class="flex">
+      <img src="https://placeholderlogo.com/img/placeholder-logo-4.png" alt="logo">
+    </div>
+    <div>
+      <ul class="flex justify-between gap-x-5 font-bold">
+        <li>Home</li>
+        <li>Users</li>
+        <li>About Us</li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="border-2  flex flex-col">
+    <h1>
+    Registar Usuario
+    </h1>
+    <form action="" id="form-create">
+      <label for="username-input">Nombre Usuario</label>
+      <input type="text" name="username-input" id="username-input">
+      <label for="userpassword-input">User Password</label>
+      <input type="password" name="userpassword-input" id="userpassword-input">
+      <button type="submit">Registar Usuario</button>
+    </form>
+  </section>
+
+    <section class="border-2  flex flex-col">
+      <h1>
+        Modificar Usuario
+      </h1>
+      <form action="" id="form-update">
+        <label for="username-input-update">Nombre Usuario</label>
+        <input type="text" name="username-input-update" id="username-input-update">
+          <label for="userpassword-input-update">User Password</label>
+          <input type="password" name="userpassword-input-update" id="userpassword-input-update">
+        <label for="id-input-update">User ID</label>
+        <input type="text" name="id-input-update" id="id-input-update">
+        <button type="submit">Modificar Usuario</button>
+      </form>
+    </section>
+
+    <section class="border-2  flex flex-col">
+      <h1>
+        Eliminar Usuario
+      </h1>
+      <form action="" id="form-delete">
+        <label for="id-input-delete">User ID</label>
+        <input type="text" name="id-input-delete" id="id-input-delete">
+        <button type="submit">Eliminar Usuario</button>
+      </form>
+    </section>
+
+ <section class="">
+ <h1>Mostrar Usuarios</h1>
+ <button id="show-users">Mostrar</button>
+ <div class="flex gap-4 flex-wrap  justify-content-center align-items-center " id="users-container">
+ <!-- <h1>Lista De UsuarioS</h1> -->
+  
+ </div>
+ </section>
+</body>
+
+</html>
