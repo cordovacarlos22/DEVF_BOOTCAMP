@@ -3,7 +3,8 @@ import './App.css'
 import ImageCard from './components/ImageCard'
 function App() {
   // ! creo el estato que se va a encargar de actualizar la lista de gifs
-  const [gits, setGits] = useState([]);
+  const [gits, setGits] = useState([])
+  
   //! api key 
   const apiKey = import.meta.env.VITE_GIPHY_API_KEY;
   //! creo el efecto que se va a encargar de llamar a la API para traer los gifs
