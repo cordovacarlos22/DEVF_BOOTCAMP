@@ -1,0 +1,2 @@
+https://dev.to/cesareferrari/database-seeding-with-knex-51gf
+https://postgres.new
