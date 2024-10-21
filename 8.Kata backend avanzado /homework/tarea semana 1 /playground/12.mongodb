@@ -1,0 +1,5 @@
+use("restaurants_sample");
+
+db.restaurants.find({
+  'borough': { $in: ['Queens', 'Staten Island', 'Bronxor Brooklyn'] }
+})

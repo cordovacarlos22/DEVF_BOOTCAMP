@@ -1,0 +1,13 @@
+
+// step 1 : connect to db collection 
+use('restaurants_sample');
+
+// step 2 : return all movies  as required 
+
+db.restaurants.find();
+
+
+
+
+
+

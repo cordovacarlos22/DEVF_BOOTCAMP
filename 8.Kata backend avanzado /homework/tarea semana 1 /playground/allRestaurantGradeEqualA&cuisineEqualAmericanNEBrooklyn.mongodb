@@ -1,0 +1,7 @@
+use('restaurants_sample');
+
+db.restaurants.find({
+  "borough": { $ne: 'Brooklyn' },
+  "grades.grade": { $eq: "A" },
+  cuisine: "American"
+})

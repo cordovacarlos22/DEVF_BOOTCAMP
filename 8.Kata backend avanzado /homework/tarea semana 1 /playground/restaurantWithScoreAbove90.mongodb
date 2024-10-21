@@ -1,0 +1,3 @@
+use('restaurants_sample');
+
+db.restaurants.find({'grades.score' : {$gt:90}});

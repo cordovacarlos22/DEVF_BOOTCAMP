@@ -1,0 +1,6 @@
+use("restaurants_sample");
+
+db.restaurants.find({
+  borough: "Bronx",
+  "cuisine": { $in: ["American", "Chinese"]}
+})

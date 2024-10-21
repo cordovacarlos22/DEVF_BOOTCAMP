@@ -1,0 +1,3 @@
+use('restaurants_sample');
+
+db.restaurants.findOne({}, { _id: 0 })

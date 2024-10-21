@@ -1,0 +1,6 @@
+use("restaurants_sample");
+
+db.restaurants.find({
+
+  "cuisine": { $nin: ["American", "Chinese"] }
+})

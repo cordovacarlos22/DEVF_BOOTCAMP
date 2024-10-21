@@ -1,0 +1,5 @@
+use('restaurants_sample');
+
+db.restaurants.find({
+  name: /^Wil/
+});

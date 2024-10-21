@@ -1,0 +1,6 @@
+// step 1 - choose the colection 
+use("restaurants_sample");
+
+// step 2 - return the restaurant  from 6  to 10 without a order 
+
+db.restaurants.find().skip(5).limit(5)

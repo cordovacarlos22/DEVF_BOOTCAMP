@@ -1,0 +1,6 @@
+// step 1  - determine db colecction
+use('restaurants_sample');
+
+// step 2 - return last 5 retaurants 
+
+db.restaurants.find().limit(5);

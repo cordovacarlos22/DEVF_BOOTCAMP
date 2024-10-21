@@ -1,0 +1,8 @@
+use('restaurants_sample');
+
+db.restaurants.find({
+
+  name: /American/,
+  "grades.score": { $gte: 70 }
+
+})
